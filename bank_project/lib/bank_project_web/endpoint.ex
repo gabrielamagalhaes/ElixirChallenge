@@ -7,7 +7,7 @@ defmodule BankProjectWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_bank_project_key",
-    signing_salt: "2grAp7Bi"
+    signing_salt: "gBDlxLFv"
   ]
 
   socket "/socket", BankProjectWeb.UserSocket,
@@ -29,8 +29,6 @@ defmodule BankProjectWeb.Endpoint do
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
   if code_reloading? do
-    socket "/phoenix/live_reload/socket", Phoenix.LiveReloader.Socket
-    plug Phoenix.LiveReloader
     plug Phoenix.CodeReloader
     plug Phoenix.Ecto.CheckRepoStatus, otp_app: :bank_project
   end

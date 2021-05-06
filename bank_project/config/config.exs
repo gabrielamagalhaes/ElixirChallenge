@@ -13,10 +13,10 @@ config :bank_project,
 # Configures the endpoint
 config :bank_project, BankProjectWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "+bxNHE4l6Wke9ZREPU5HmEZZjWwbJ2w9I6Wq52QJvdVcTj8Ff7bLrTAPcHl+mVRV",
-  render_errors: [view: BankProjectWeb.ErrorView, accepts: ~w(html json), layout: false],
+  secret_key_base: "tEqjI3Y3JMuju3jYOtB404bkB2Vq5wrNWWludqBiSGaxKDg/9AXTJpPBHUhrJSSR",
+  render_errors: [view: BankProjectWeb.ErrorView, accepts: ~w(json), layout: false],
   pubsub_server: BankProject.PubSub,
-  live_view: [signing_salt: "RYjn9cM3"]
+  live_view: [signing_salt: "7QIkT9kS"]
 
 # Configures Elixir's Logger
 config :logger, :console,
