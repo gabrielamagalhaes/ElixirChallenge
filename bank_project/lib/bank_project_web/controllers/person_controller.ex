@@ -1,7 +1,7 @@
 defmodule BankProjectWeb.PersonController do
   use BankProjectWeb, :controller
 
-  def index(conn, _params) do
-    render(conn, "index.html")
+  def show(conn, %{"messenger" => messenger}) do
+    json(conn, %{id: messenger})
   end
 end
